@@ -21,27 +21,40 @@ simple Area App python program do the following  -The user is asked for an area 
    ```bash
    git clone https://github.com/soliman141119/simple-app.git
 2. Navigate to the project directory:
+    ```bash
    cd project
-3. Build the Docker image:
+4. Build the Docker image:
+    ```bash
    docker image build -t < username docker hub >/smiple area  .
-4. Check that image is existed:
+6. Check that image is existed:
+    ```bash
    docker images
+    ```
    ![image](https://github.com/soliman141119/simple-app/assets/72981030/19ec882d-9319-48cd-b7d4-832ee27c83e0)
-5. Make tag for image like :
+8. Make tag for image like :
+    ```bash
    docker tag < username docker hub >/smiple-area < username docker hub >/smiple-area:v1
-6. Run the Docker container:
+10. Run the Docker container:
+```bash
    docker container run -it soliman14/area-app
-   ![image](https://github.com/soliman141119/simple-app/assets/72981030/ede46364-5379-4234-8a38-c9e599536e20)
-7. login on docker hub  account
+```
+![image](https://github.com/soliman141119/simple-app/assets/72981030/ede46364-5379-4234-8a38-c9e599536e20)
+12. login on docker hub  account
+ ```bash
    docker login -u < username docker hub >
-8. for upload or push image on docker hub repo
-   docker push < username docker hub >/area-app:v1
-   https://hub.docker.com/repository/docker/soliman14/smiple-area/general
+```
+13. for upload or push image on docker hub repo
+   ```bash
+  docker push < username docker hub >/area-app:v1
+   ```
+  https://hub.docker.com/repository/docker/soliman14/smiple-area/general
 ### Kubernetes Deployment
 1. Ensure you have a Kubernetes cluster set up and configured.
 2. Apply the Kubernetes deployment YAML:
+    ```bash
    kubectl apply -f  k8s-deploy-app.yaml
-3. Verify the deployment:
+4. Verify the deployment:
+```bash
   kubectl get deployments
   kubectl get pods
   kubectl get services
