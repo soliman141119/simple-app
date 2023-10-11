@@ -22,7 +22,7 @@ simple Area App python program do the following  -The user is asked for an area 
    git clone https://github.com/soliman141119/simple-app.git
 2. Navigate to the project directory:
     ```bash
-   cd project
+     cd project
 4. Build the Docker image:
     ```bash
    docker image build -t < username docker hub >/smiple area  .
