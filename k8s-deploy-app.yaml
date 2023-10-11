@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: area-apps-deploy
+  labels:
+    app: areaa
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: area
+  template:
+    metadata:
+      name: area_app
+      labels:
+        app: area
+    spec:
+      containers:
+        - name: area-app-cont
+          image: soliman14/smiple-area:v1
+        
